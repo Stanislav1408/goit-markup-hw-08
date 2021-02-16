@@ -5,12 +5,12 @@
         "../sass/portfolio.scss",
         "../sass/utils/_variable.scss",
         "../sass/base/_normalize.scss",
-        "../sass/componets/main-page/_body.scss",
+        "../sass/componets/_body.scss",
         "../sass/utils/_utils.scss",
-        "../sass/componets/portfolio-page/_header.scss",
-        "../sass/componets/portfolio-page/_footer.scss",
-        "../sass/componets/portfolio-page/_list-no-style-button.scss",
-        "../sass/componets/portfolio-page/_work.scss"
+        "../sass/componets/_header-portfolio.scss",
+        "../sass/componets/_footer-portfolio.scss",
+        "../sass/componets/_list-no-style-button.scss",
+        "../sass/componets/_work.scss"
     ],
     "names": [],
     "file": "portfolio.css"

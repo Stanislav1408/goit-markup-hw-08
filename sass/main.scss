@@ -1,13 +1,13 @@
 @import "./utils/variable";
 @import "./base/normalize";
-@import "./componets/main-page/body";
+@import "./componets/body";
 @import "./utils/utils";
-@import "./utils/modal";
+@import "./componets/modal";
 
-@import "./componets/main-page/header";
-@import "./componets/main-page/effect";
-@import "./componets/main-page/tasks";
-@import "./componets/main-page/img-list";
-@import "./componets/main-page/team";
-@import "./componets/main-page/clients";
-@import "./componets/main-page/footer";
+@import "./componets/header";
+@import "./componets/effect";
+@import "./componets/tasks";
+@import "./componets/img-list";
+@import "./componets/team";
+@import "./componets/clients";
+@import "./componets/footer";
