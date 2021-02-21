@@ -1,4 +1,4 @@
-/*.header {
+.header {
   border-bottom: 1px solid #ececec;
 
   & a:hover,
@@ -150,4 +150,8 @@
 
 .mailtel .item + .item {
   padding-left: 50px;
-}*/
+}
+
+.mobile-menu {
+  display: none;
+}

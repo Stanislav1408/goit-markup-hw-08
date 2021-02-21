@@ -1,0 +1,184 @@
+@media screen and (max-width: 767px) {
+  .footer {
+    background: $background;
+    padding: 60px 0;
+    margin: auto;
+
+    width: 480px;
+
+    & .container {
+      text-align: center;
+      display: block;
+    }
+
+    & address {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      color: $text-text;
+    }
+
+    & a:hover,
+    & a:focus,
+    & a:active {
+      color: $color-hover;
+    }
+  }
+
+  .social {
+    margin: 60px 0 0 0;
+
+    & h3 {
+      margin: 0 0 20px 0;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      color: #ffffff;
+    }
+  }
+
+  .footer-instagram {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    fill: $text-text;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+  }
+
+  .footer-twitter {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    fill: $text-text;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+  }
+
+  .footer-facebook {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    fill: $text-text;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+  }
+
+  .footer-linkedin {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    fill: $text-text;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+  }
+
+  .WebStudios {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $color-hover;
+    text-decoration: none;
+    font-family: Raleway;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .Studio {
+    color: $text-text;
+  }
+
+  .mailtel-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    padding: 0px;
+  }
+
+  .mailtel-a {
+    color: $color;
+    text-decoration: none;
+    display: block;
+    transition-duration: 250ms;
+    margin-top: 9px;
+  }
+
+  .mailtel-b {
+    color: $color;
+    text-decoration: none;
+    display: block;
+    transition-duration: 250ms;
+    margin-top: 9px;
+  }
+
+  .footer-mail {
+    width: 450px;
+    margin-top: 60px;
+
+    & h3 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      color: $text-text;
+    }
+
+    & input {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      padding: 15px;
+      width: 100%;
+      color: $text-text;
+
+      margin-bottom: 20px;
+      width: 450px;
+    }
+
+    & button {
+      background: $color-hover;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      padding: 10px 28px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.875;
+      text-align: center;
+      letter-spacing: 0.06em;
+      margin: auto;
+    }
+  }
+
+  .form-mailing {
+    margin: 20px 0 0 0;
+    display: block;
+  }
+
+  .btn-sent {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $text-text;
+
+    & svg {
+      margin-left: 10px;
+    }
+  }
+}

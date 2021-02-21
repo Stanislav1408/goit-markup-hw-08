@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <link rel="stylesheet" href="./dist/css/adaptiv.min.css" />
 </head>
 
 <body>
@@ -20,43 +20,54 @@
         <div class="container">
             <nav class="list-nav">
                 <a href="index.html" class="WebStudio">Web<span class="Studio-">Studio</span></a>
-                <ul class="list-no-style-nav">
-                    <li class="item">
-                        <a href="./index.html" class="studioo">Студия
-                        
-                    </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="portfolioo">Портфолио
-                           
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="contact">Контакты
-                            
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="mailtel">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="mailto" target="_blank">info@devstudio.com
-                        <svg width="16px" height="16px" class="envelope">
-                            <use href="./sprite.svg#icon-envelope"></use>
-                        </svg>
-                    
-                    </a>
-                </li>
-
-                <li class="item">
-                    <a href="tel:380961111111" class="tel">+38 096 111 11 11
-                        <svg width="16" height="16" class="Vector">
-                            <use href="./sprite.svg#icon-Vector"></use>
-                        </svg>
-                        
-                    </a>
-                </li>
-            </ul>
+                <button type="button" class="mobile-menu is-open" aria-expanded="false" aria-controls="menu"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./sprite.svg#icon-menu"></use>
+                        <use class="icon-cross" href="./sprite.svg#icon-close-menu"></use>
+                    </svg>
+                </button>
+    
+                <div class="menu is-open " id="menu" data-menu>
+                    <ul class="list-no-style-nav">
+                        <li class="item">
+                            <a href="" class="studio">Студия
+    
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="portfolio.html" class="portfolio">Портфолио
+    
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="contact">Контакты
+    
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="mailtel">
+                        <li class="item">
+                            <a href="mailto:info@devstudio.com" class="mailto" target="blank">info@devstudio.com
+    
+                                <svg width="16px" height="16px" class="envelope">
+                                    <use href="./sprite.svg#icon-envelope"></use>
+                                </svg>
+    
+                            </a>
+                        </li>
+    
+                        <li class="item">
+                            <a href="tel:380961111111" class="tel">+38 096 111 11 11
+                                <svg width="16" height="16" class="Vector">
+                                    <use href="./sprite.svg#icon-Vector"></use>
+                                </svg>
+    
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </header>
 

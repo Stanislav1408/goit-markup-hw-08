@@ -7,6 +7,17 @@
 .tasks {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 
   & h3 {
     @media screen and (min-width: 480px) and (max-width: 767px) {

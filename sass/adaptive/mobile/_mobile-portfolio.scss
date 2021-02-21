@@ -1,0 +1,211 @@
+@media screen and (max-width: 767px) {
+  .list-no-style-button {
+    margin: 0 0 50px 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+
+    & button:hover,
+    & button:focus,
+    & button:active {
+      background-color: $color-hover;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      color: $text-text;
+    }
+  }
+
+  .works {
+    display: none;
+  }
+
+  .portfolio-section {
+    padding: 60px 0;
+  }
+
+  .list-button {
+    margin-right: 8px;
+
+    &:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+  }
+
+  .button-type-a {
+    width: 73px;
+    height: 38px;
+    left: 495px;
+    top: 174px;
+    border: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 62;
+    text-align: center;
+    color: $colot-text;
+    background-color: $background-team;
+    border-radius: 4px;
+    transition-duration: 250ms;
+  }
+
+  .button-type-b {
+    width: 128px;
+    height: 38px;
+    left: 576px;
+    top: 174px;
+    border: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 62;
+    text-align: center;
+    color: $colot-text;
+    background-color: $background-team;
+    border-radius: 4px;
+    transition-duration: 250ms;
+  }
+
+  .button-type-c {
+    width: 145px;
+    height: 38px;
+    left: 712px;
+    top: 174px;
+    border: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 62;
+    text-align: center;
+    color: $colot-text;
+    background-color: $background-team;
+    border-radius: 4px;
+    transition-duration: 250ms;
+  }
+
+  .button-type-d {
+    width: 103px;
+    height: 38px;
+    left: 865px;
+    top: 174px;
+    border: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 62;
+    text-align: center;
+    color: $colot-text;
+    background-color: $background-team;
+    border-radius: 4px;
+    transition-duration: 250ms;
+  }
+
+  .button-type-e {
+    width: 130px;
+    height: 38px;
+    left: 976px;
+    top: 174px;
+    border: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 62;
+    text-align: center;
+    color: $colot-text;
+    background-color: $background-team;
+    border-radius: 4px;
+    transition-duration: 250ms;
+  }
+
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: auto;
+
+    & h2 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      color: $colot-text;
+      margin: 0px 0px 4px 0;
+    }
+
+    & p {
+      font-size: 16px;
+      line-height: 1.87;
+
+      color: $color;
+      margin: 0px 0px 4px 0;
+      padding: 0;
+    }
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  .list-no-style-work {
+    list-style: none;
+    display: flex;
+    width: 450px;
+    height: 404px;
+    margin: 30px 0 0 0;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    & a:hover,
+    & a:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      transition: transform 250ms;
+    }
+  }
+
+  .thumb-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    &:hover .work-img,
+    &:focus .work-img {
+      transform: translatey(0);
+    }
+
+    & img {
+      width: 450px;
+      height: 294px;
+    }
+  }
+
+  .work-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translatey(100%);
+    transition-duration: 250ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .thumb-work {
+      margin: 0;
+      width: 322px;
+      height: 168px;
+      font-size: 18px;
+      line-height: 1.55;
+      color: $text-text;
+    }
+  }
+
+  .work-img-container {
+    padding: 20px 0 20px 24px;
+  }
+}

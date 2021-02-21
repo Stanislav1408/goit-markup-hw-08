@@ -1,0 +1,190 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    position: relative;
+    width: 480px;
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid #ececec;
+
+    & a:hover,
+    & a:focus,
+    & a:active {
+      color: $color-hover;
+    }
+    margin: auto;
+  }
+
+  .list-no-style-nav .item + .item {
+    margin-left: 50px;
+  }
+
+  .list-nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 450px;
+    margin: auto;
+  }
+
+  .menu {
+    position: fixed;
+    margin: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background-color: $text-text;
+
+    &.is-open {
+      display: none;
+    }
+  }
+
+  .list-no-style-nav {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .WebStudio {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $color-hover;
+    text-decoration: none;
+    font-family: Raleway;
+    display: block;
+    margin-right: 93px;
+    transition-duration: 250ms;
+  }
+
+  .Studio- {
+    color: $colot-text;
+  }
+
+  .studio {
+    position: relative;
+    color: $color-hover;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .list-no-style-nav .studio::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+
+  .portfolio {
+    position: relative;
+    color: $colot-text;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .contact {
+    position: relative;
+    color: $colot-text;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .studio,
+  .portfolio,
+  .contact {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-duration: 250ms;
+  }
+
+  .mailto {
+    position: relative;
+    list-style: none;
+    color: $color;
+    fill: $color;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-duration: 250ms;
+  }
+
+  .envelope {
+    margin-right: 10px;
+  }
+
+  .Vector {
+    margin-right: 10px;
+  }
+
+  .mailtel {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & .mailto {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    & .tel {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    & a:hover,
+    & a:focus {
+      color: $color-hover;
+      fill: $color-hover;
+    }
+  }
+
+  .tel {
+    position: relative;
+    list-style: none;
+    color: $color;
+    fill: $color;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-duration: 250ms;
+  }
+
+  .mailtel .mailto .tel {
+    color: $color;
+    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .mailtel .item + .item {
+    padding-left: 50px;
+  }
+
+  .mobile-menu {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .mobile-menu .icon-menu {
+    display: none;
+  }
+
+  .mobile-menu.is-open .icon-menu {
+    display: block;
+  }
+
+  .mobile-menu.is-open .icon-cross {
+    display: none;
+  }
+}

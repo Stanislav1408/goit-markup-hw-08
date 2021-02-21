@@ -586,20 +586,26 @@ textarea::placeholder {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.header {
+.header {
   border-bottom: 1px solid #ececec;
+}
 
-  & a:hover,
-  & a:focus,
-  & a:active {
-    color: $color-hover;
-  }
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: #2196f3;
+}
 
-  & .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list-no-style-nav .item + .item {
@@ -607,37 +613,46 @@ textarea::placeholder {
 }
 
 .list-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list-no-style-nav {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .WebStudio {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: $color-hover;
+  color: #2196f3;
   text-decoration: none;
   font-family: Raleway;
   display: block;
   margin-right: 93px;
-  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .Studio- {
-  color: $colot-text;
+  color: #212121;
 }
 
 .studio {
   position: relative;
-  color: $color-hover;
+  color: #2196f3;
   font-weight: 500;
   text-decoration: none;
 }
@@ -655,13 +670,14 @@ textarea::placeholder {
 
 .portfolio {
   position: relative;
-  color: $colot-text;
+  color: #212121;
   font-weight: 500;
   text-decoration: none;
 }
+
 .contact {
   position: relative;
-  color: $colot-text;
+  color: #212121;
   font-weight: 500;
   text-decoration: none;
 }
@@ -672,18 +688,20 @@ textarea::placeholder {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .mailto {
   position: relative;
   list-style: none;
-  color: $color;
-  fill: $color;
+  color: #757575;
+  fill: #757575;
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .envelope {
@@ -695,41 +713,54 @@ textarea::placeholder {
 }
 
 .mailtel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+}
 
-  & .mailto {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+.mailtel .mailto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
 
-  & .tel {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+.mailtel .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
 
-  & a:hover,
-  & a:focus {
-    color: $color-hover;
-    fill: $color-hover;
-  }
+.mailtel a:hover,
+.mailtel a:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .tel {
   position: relative;
   list-style: none;
-  color: $color;
-  fill: $color;
+  color: #757575;
+  fill: #757575;
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .mailtel .mailto .tel {
-  color: $color;
+  color: #757575;
   text-decoration: none;
   display: block;
   padding-top: 32px;
@@ -738,7 +769,12 @@ textarea::placeholder {
 
 .mailtel .item + .item {
   padding-left: 50px;
-}*/
+}
+
+.mobile-menu {
+  display: none;
+}
+
 .effect {
   background-color: #2f303a;
   -webkit-box-pack: center;
@@ -845,6 +881,25 @@ textarea::placeholder {
 .tasks {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .tasks {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tasks {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tasks {
+    width: 1200px;
+  }
 }
 
 .tasks h3 {
@@ -1088,6 +1143,25 @@ textarea::placeholder {
   background-color: #f5f4fa;
   padding: 94px 0;
   text-align: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .team {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    width: 1200px;
+  }
 }
 
 .team h2 {
@@ -1147,10 +1221,12 @@ textarea::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin: 50px 0 0 0;
   }
 }
@@ -1190,6 +1266,24 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .img-team {
     width: 270px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .img-team:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-team:not(:last-child) {
+    margin: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-team:not(:last-child) {
+    margin: 0;
   }
 }
 
@@ -1353,31 +1447,131 @@ textarea::placeholder {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: 0 auto;
-  width: 1170px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    width: 1170px;
+  }
 }
 
 .clients h2 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   margin: 0;
 }
 
 .clients-company {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 0;
   margin: 50px 0 0 0;
 }
 
-.clients-company li {
-  width: 170px;
-  height: 90px;
+@media screen and (min-width: 480px) {
+  .clients-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients-company li:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-company li:nth-child(2n) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-company li:nth-child(2n) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients-company li:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-company li:nth-child(n + 3) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-company li:nth-child(n + 3) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients-company li {
+    width: 210px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-company li {
+    width: 226px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-company li {
+    width: 170px;
+    height: 90px;
+  }
 }
 
 .clients-company a:hover,
@@ -1438,15 +1632,53 @@ textarea::placeholder {
 .footer {
   background: #2f303a;
   padding: 60px 0;
+  margin: auto;
 }
 
-.footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 480px) {
+  .footer {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer .container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer address {
@@ -1462,12 +1694,26 @@ textarea::placeholder {
   color: #2196f3;
 }
 
-.social {
-  margin-left: 70px;
+@media screen and (min-width: 480px) {
+  .social {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-left: 70px;
+  }
 }
 
 .social h3 {
-  margin: 0;
+  margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1595,12 +1841,29 @@ textarea::placeholder {
   margin-top: 9px;
 }
 
-.footer-mail {
-  margin-left: auto;
-  width: 570px;
+@media screen and (min-width: 480px) {
+  .footer-mail {
+    width: 450px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-mail {
+    margin-left: auto;
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mail {
+    margin-left: auto;
+    width: 570px;
+  }
 }
 
 .footer-mail h3 {
+  margin: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1614,8 +1877,28 @@ textarea::placeholder {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px;
-  width: 358px;
+  width: 100%;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-mail input {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-mail input {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mail input {
+    width: 358px;
+    margin: 0;
+  }
 }
 
 .footer-mail button {
@@ -1629,12 +1912,47 @@ textarea::placeholder {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: auto;
 }
 
-.form-mailing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 480px) {
+  .footer-mail button {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-mail button {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mail button {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form-mailing {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-mailing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-mailing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .btn-sent {
