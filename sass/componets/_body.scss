@@ -11,17 +11,11 @@ ul {
   list-style: none;
 }
 
-@media screen and (min-width: 480px) {
-  img {
-    display: block;
-    height: auto;
-  }
-}
-/*img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-}*/
+}
 
 button {
   cursor: pointer;

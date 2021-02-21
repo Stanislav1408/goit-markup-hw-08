@@ -14,7 +14,7 @@
     margin: auto;
   }
 
-  .list-no-style-nav .item + .item {
+  .list-no-style-nav .item {
     margin-left: 50px;
   }
 
@@ -22,28 +22,17 @@
     display: flex;
     justify-content: space-between;
 
-    width: 450px;
+    width: 100%;
     margin: auto;
   }
 
-  .menu {
-    position: fixed;
-    margin: auto;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    background-color: $text-text;
-
-    &.is-open {
-      display: none;
-    }
+  &.is-open {
+    display: none;
   }
 
   .list-no-style-nav {
     list-style: none;
-
+    display: block;
     padding: 0;
     margin: 0;
   }
@@ -65,33 +54,36 @@
   }
 
   .studio {
-    position: relative;
     color: $color-hover;
     font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
     text-decoration: none;
   }
 
-  .list-no-style-nav .studio::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: #2196f3;
-    border-radius: 2px;
-  }
+  /*.list-no-style-nav .studio::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}*/
 
   .portfolio {
-    position: relative;
     color: $colot-text;
     font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
     text-decoration: none;
   }
   .contact {
-    position: relative;
     color: $colot-text;
     font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
     text-decoration: none;
   }
 
@@ -99,8 +91,7 @@
   .portfolio,
   .contact {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0 0 0;
     transition-duration: 250ms;
   }
 
@@ -169,11 +160,19 @@
   }
 
   .mobile-menu {
+    position: absolute;
+    top: 10px;
+    left: 90%;
     display: inline-flex;
     padding: 0;
     margin: 0;
     border: none;
     background-color: transparent;
+  }
+
+  .mobile-menu:hover,
+  .mobile-menu:focus {
+    fill: $color-hover;
   }
 
   .mobile-menu .icon-menu {
@@ -186,5 +185,29 @@
 
   .mobile-menu.is-open .icon-cross {
     display: none;
+  }
+
+  .menu {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $text-text;
+  }
+
+  .header-socials {
+    position: relative;
+    display: flex;
+    padding-left: 40px;
+    flex-wrap: wrap;
+
+    & a {
+      color: $color-hover;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+    }
   }
 }

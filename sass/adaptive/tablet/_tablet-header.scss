@@ -40,7 +40,7 @@
     text-decoration: none;
     font-family: Raleway;
     display: block;
-    margin-right: 70px;
+    margin-top: 10px;
     transition-duration: 250ms;
   }
 
@@ -148,6 +148,10 @@
   }
 
   .mobile-menu {
+    display: none;
+  }
+
+  .header-socials {
     display: none;
   }
 }
