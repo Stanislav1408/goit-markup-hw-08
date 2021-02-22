@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./dist/css/adaptiv.min.css" >
+    <link rel="stylesheet" href="./css/adaptiv.css" >
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 </head>
 
@@ -69,6 +69,7 @@
                         <li class="slash"><a href="#">Facebook</a></li>
                         <li class="slash"><a href="#">LinkedIn</a></li>
                     </ul>
+                    
                     </div>
                 </div>
                 <button type="button" class="mobile-menu is-open" aria-expanded="false" aria-controls="menu" data-menu-button>
@@ -160,7 +161,14 @@
                 <ul class="list-no-style-img">
                     <li>
                         <div class="thumb">
-                            <img src="./img/img.jpg" alt="IT Картинкка" width="370" title="IT Картинкка" />
+                            <picture>
+                                <img srcset="
+                                ./img/adaptiv/desck/main/img.jpg 1x
+                                ./img/adaptiv/desck/main/img.jpg  2x"
+                                src="./img/adaptiv/desck/main/img.jpg"
+                                 alt="клавиатура"
+                                 loading="lazy">
+                            </picture>
                             <div class="thumb-label">
                                 <h3 class="label">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                             </div>
@@ -168,7 +176,14 @@
                     </li>
                     <li>
                         <div class="thumb">
-                            <img src="./img/img(1).jpg" alt="IT Картинкка" width="370" title="IT Картинкка" />
+                            <picture>
+                                <img srcset="
+                                    ./img/adaptiv/desck/main/img(1).jpg 1x
+                                    ./img/adaptiv/desck/main/img(1)@2x.jpg  2x" 
+                                    src="./img/adaptiv/desck/main/img(1).jpg"
+                                    alt="телефон"
+                                    loading="lazy">
+                            </picture>
                             <div class="thumb-label">
                                 <h3 class="label">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                             </div>
@@ -176,7 +191,15 @@
                     </li>
                     <li>
                         <div class="thumb">
-                            <img src="./img/img(2).jpg" alt="IT Картинкка" width="370" title="IT Картинкка" />
+                            <picture>
+                                <img srcset="
+                                    ./img/adaptiv/desck/main/img(2).jpg 1x
+                                    ./img/adaptiv/desck/main/img(2)@2x.jpg  2x"
+                                    src="
+                                    ./img/adaptiv/desck/main/img(2).jpg" 
+                                    alt="планшет" 
+                                    loading="lazy">
+                            </picture>
                             <div class="thumb-label">
                                 <h3 class="label">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                             </div>
@@ -192,7 +215,25 @@
                 <h2>Наша команда</h2>
                 <ul class="list-no-style-team">
                     <li class="img-team">
-                        <img src="./img/Игорь.jpg" alt="Игорь Демьяненко" width="270" title="Игорь Демьяненко" />
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="
+                                            ./img/adaptiv/desck/main/igor.jpg    1x,
+                                            ./img/adaptiv/desck/main/igor@2x.jpg 2x
+                                          " />
+                        
+                            <source media="(min-width:768px)" srcset="
+                                            ./img/adaptiv/tablet/main/igor.jpg    1x,
+                                            ./img/adaptiv/tablet/main/igor@2x.jpg 2x
+                                          " />
+                        
+                            <img srcset="
+                                            ./img/adaptiv/mobile/main/igor.jpg    1x,
+                                            ./img/adaptiv/mobile/main/igor@2x.jpg 2x
+                                          " src="./img/adaptiv/mobile/main/igor.jpg" 
+                                          alt="Игорь Демьяненко" 
+                                          loading="lazy" />
+                        </picture>
+                        
                         <div class="img-container">
                             <h3>Игорь Демьяненко</h3>
                             <p>Product Designer</p>
@@ -229,7 +270,24 @@
                         </div>
                     </li>
                     <li class="img-team">
-                        <img src="./img/Ольга.jpg" alt="Ольга Репина" width="270" title="Ольга Репина" />
+                        <picture>
+                            <source 
+                            media="(min-width:1200px)" srcset="
+                                                    ./img/adaptiv/desck/main/olga.jpg    1x,
+                                                    ./img/adaptiv/desck/main/olga@2x.jpg 2x" />
+                        
+                            <source 
+                            media="(min-width:768px)" srcset="
+                                                    ./img/adaptiv/tablet/main/olga.jpg    1x,
+                                                    ./img/adaptiv/tablet/main/olga@2x.jpg 2x" />
+                        
+                            <img srcset="
+                                ./img/adaptiv/mobile/main/olga.jpg    1x,
+                                ./img/adaptiv/mobile/main/olga@2x.jpg 2x
+                                " src="./img/adaptiv/mobile/main/olga.jpg" 
+                                alt="Ольга Репина"
+                                loading="lazy" />
+                        </picture>
                         <div class="img-container">
                             <h3>Ольга Репина</h3>
                             <p>Frontend Develope</p>
@@ -266,7 +324,25 @@
                         </div>
                     </li>
                     <li class="img-team">
-                        <img src="./img/Николай.jpg" alt="Николай Тарасов" width="270" title="Николай Тарасов" />
+                        <picture>
+                            <source media="(min-width:1200px)" 
+                            srcset="
+                                    ./img/adaptiv/desck/main/nikolay.jpg    1x,
+                                    ./img/adaptiv/desck/main/nikolay@2x.jpg 2x" />
+                        
+                            <source 
+                            media="(min-width:768px)" 
+                            srcset="
+                                    ./img/adaptiv/tablet/main/nikolay.jpg    1x,
+                                    ./img/adaptiv/tablet/main/nikolay@2x.jpg 2x" />
+                        
+                            <img srcset="
+                                    ./img/adaptiv/mobile/main/nikolay.jpg    1x,
+                                    ./img/adaptiv/mobile/main/nikolay@2x.jpg 2x
+                                    " src="./img/adaptiv/mobile/main/nikolay.jpg" 
+                                    alt="Николай Тарасов" 
+                                    loading="lazy" />
+                        </picture>
                         <div class="img-container">
                             <h3>Николай Тарасов</h3>
                             <p><span>Marketing</span></p>
@@ -303,7 +379,24 @@
                         </div>
                     </li>
                     <li class="img-team">
-                        <img src="./img/Михаил.jpg" alt="Михаил Ермаков" width="270" title="Михаил Ермаков" />
+                        <picture>
+                            <source media="(min-width:1200px)" 
+                            srcset="
+                                    ./img/adaptiv/desck/main/mihail.jpg    1x,
+                                    ./img/adaptiv/desck/main/mihail@2x.jpg 2x" />
+                        
+                            <source media="(min-width:768px)" 
+                            srcset="
+                                    ./img/adaptiv/tablet/main/mihail.jpg    1x,
+                                    ./img/adaptiv/tablet/main/mihail@2x.jpg 2x" />
+                        
+                            <img srcset="
+                                        ./img/adaptiv/mobile/main/mihail.jpg    1x,
+                                        ./img/adaptiv/mobile/main/mihail@2x.jpg 2x
+                                        " src="./img/adaptiv/mobile/main/mihail.jpg" 
+                                        alt="Михаил Ермаков"
+                                        loading="lazy" />
+                        </picture>
                         <div class="img-container">
                             <h3>Михаил Ермаков</h3>
                             <p>UI Designer</p>

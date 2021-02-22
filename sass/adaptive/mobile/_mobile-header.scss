@@ -15,7 +15,7 @@
   }
 
   .list-no-style-nav .item {
-    margin-left: 50px;
+    margin-left: 40px;
   }
 
   .list-nav {
@@ -45,7 +45,7 @@
     text-decoration: none;
     font-family: Raleway;
     display: block;
-    margin-right: 93px;
+    margin-top: 16px;
     transition-duration: 250ms;
   }
 
@@ -54,23 +54,23 @@
   }
 
   .studio {
-    color: $color-hover;
+    color: $colot-text;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
+    color: $color-hover;
     text-decoration: none;
   }
 
-  /*.list-no-style-nav .studio::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-}*/
+  .list-no-style-nav .studio::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
 
   .portfolio {
     color: $colot-text;
@@ -89,45 +89,65 @@
 
   .studio,
   .portfolio,
-  .contact {
+  .contact,
+  .studioo,
+  .portfolioo {
     display: block;
     padding: 32px 0 0 0;
     transition-duration: 250ms;
   }
 
+  .studioo {
+    position: relative;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $colot-text;
+
+    text-decoration: none;
+  }
+
+  .portfolioo {
+    position: relative;
+    color: $color-hover;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    text-decoration: none;
+    padding-top: 33px;
+    padding-bottom: 32px;
+  }
+
   .mailto {
     position: relative;
     list-style: none;
-    color: $color;
+    color: $color-hover;
     fill: $color;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
     transition-duration: 250ms;
   }
 
   .envelope {
+    display: none;
     margin-right: 10px;
   }
 
   .Vector {
+    display: none;
     margin-right: 10px;
   }
 
   .mailtel {
+    display: block;
+    margin: 270px 0 0 40px;
     list-style: none;
     padding: 0;
-    margin: 0;
-
-    & .mailto {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-    & .tel {
-      display: flex;
-      flex-direction: row-reverse;
-    }
 
     & a:hover,
     & a:focus {
@@ -141,9 +161,13 @@
     list-style: none;
     color: $color;
     fill: $color;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-top: 32px;
     transition-duration: 250ms;
   }
 
@@ -151,18 +175,18 @@
     color: $color;
     text-decoration: none;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 0;
   }
 
-  .mailtel .item + .item {
-    padding-left: 50px;
+  .mailtel .item {
+    margin-top: 32px;
   }
 
   .mobile-menu {
     position: absolute;
     top: 10px;
     left: 90%;
+    z-index: 3;
     display: inline-flex;
     padding: 0;
     margin: 0;
@@ -190,7 +214,7 @@
   .menu {
     margin: auto;
     position: absolute;
-
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -202,6 +226,8 @@
     display: flex;
     padding-left: 40px;
     flex-wrap: wrap;
+    margin-top: 64px;
+    margin-bottom: 48px;
 
     & a {
       color: $color-hover;
@@ -209,6 +235,17 @@
       font-size: 18px;
       line-height: 1.22;
       letter-spacing: 0.02em;
+      text-decoration: none;
     }
+  }
+
+  .slash:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .slash:not(:last-child) {
+    display: flex;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
   }
 }

@@ -33,14 +33,15 @@
   }
 
   .WebStudio {
-    font-size: 26px;
-    line-height: 1.19;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $color-hover;
     text-decoration: none;
     font-family: Raleway;
     display: block;
-    margin-top: 10px;
+    margin: 10px 88px 0 0;
     transition-duration: 250ms;
   }
 
@@ -52,6 +53,9 @@
     position: relative;
     color: $color-hover;
     font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
   }
 
@@ -70,12 +74,18 @@
     position: relative;
     color: $colot-text;
     font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
   }
   .contact {
     position: relative;
     color: $colot-text;
     font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
   }
 
@@ -91,6 +101,7 @@
   .mailtel {
     display: block;
     list-style: none;
+    margin-left: 75px;
 
     & .mailto {
       display: flex;
@@ -117,7 +128,11 @@
     color: $color;
     fill: $color;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
 
+    letter-spacing: 0.02em;
     transition-duration: 250ms;
   }
 
@@ -135,12 +150,23 @@
     color: $color;
     fill: $color;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+
+    letter-spacing: 0.02em;
     transition-duration: 250ms;
   }
 
   .mailtel .mailto .tel {
     color: $color;
     text-decoration: none;
+  }
+
+  .menu .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .mailtel .item + .item {
