@@ -2169,6 +2169,7 @@ textarea::placeholder {
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: auto;
   }
 }
@@ -2219,6 +2220,7 @@ textarea::placeholder {
 @media screen and (max-width: 767px) {
   .footer {
     background: #2f303a;
+    background-position: center;
     padding: 60px 0;
     margin: auto;
     width: 480px;
@@ -3006,7 +3008,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 767px) {
   .list-no-style-button {
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3017,6 +3019,7 @@ textarea::placeholder {
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding: 0;
+    width: 480px;
   }
   .list-no-style-button button:hover,
   .list-no-style-button button:focus,
@@ -3032,6 +3035,7 @@ textarea::placeholder {
   }
   .portfolio-section {
     padding: 60px 0;
+    width: 100%;
   }
   .list-button {
     margin-right: 8px;
@@ -3132,6 +3136,7 @@ textarea::placeholder {
         flex-wrap: wrap;
     padding: 0px;
     margin: auto;
+    width: 480px;
   }
   .work h2 {
     font-weight: 700;
@@ -3545,7 +3550,7 @@ textarea::placeholder {
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
+    background-position: center;
   }
 }
 
@@ -3597,7 +3602,7 @@ textarea::placeholder {
     background: #2f303a;
     padding: 60px 0;
     margin: auto;
-    width: 768px;
+    width: 100%;
   }
   .footer .container {
     display: -webkit-box;
