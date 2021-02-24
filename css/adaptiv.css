@@ -2069,7 +2069,6 @@ textarea::placeholder {
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
-    width: 480px;
   }
   .clients h2 {
     font-weight: 700;
@@ -2087,11 +2086,12 @@ textarea::placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
     padding: 0;
     margin: 50px 0 0 0;
   }
   .clients-company li {
-    width: 210px;
+    width: calc((100% - 4 * 15px) / 2);
     height: 90px;
   }
   .clients-company li:nth-child(2n) {
@@ -2363,7 +2363,7 @@ textarea::placeholder {
     margin-top: 9px;
   }
   .footer-mail {
-    width: 450px;
+    width: 100%;
     margin-top: 60px;
   }
   .footer-mail h3 {
@@ -2383,7 +2383,7 @@ textarea::placeholder {
     width: 100%;
     color: #ffffff;
     margin-bottom: 20px;
-    width: 450px;
+    width: 100%;
   }
   .footer-mail button {
     background: #2196f3;
@@ -2424,7 +2424,6 @@ textarea::placeholder {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     position: relative;
-    width: 480px;
     height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2458,6 +2457,7 @@ textarea::placeholder {
     display: block;
     padding: 0;
     margin: 0;
+    width: 100%;
   }
   .WebStudio {
     font-size: 24px;
@@ -2559,6 +2559,7 @@ textarea::placeholder {
     margin: 270px 0 0 40px;
     list-style: none;
     padding: 0;
+    width: 100%;
   }
   .mailtel a:hover,
   .mailtel a:focus {
@@ -2583,9 +2584,14 @@ textarea::placeholder {
     text-decoration: none;
     display: block;
     padding: 0;
+    width: 100%;
   }
   .mailtel .item {
     margin-top: 32px;
+    width: 100%;
+  }
+  .menu .header-menu {
+    width: 100%;
   }
   .mobile-menu {
     position: absolute;
@@ -2632,6 +2638,7 @@ textarea::placeholder {
         flex-wrap: wrap;
     margin-top: 64px;
     margin-bottom: 48px;
+    width: 100%;
   }
   .header-socials a {
     color: #2196f3;
@@ -2805,7 +2812,7 @@ textarea::placeholder {
     top: 393px;
     left: 50%;
     z-index: 4;
-    width: 450px;
+    width: 100%;
     height: 609px;
     padding: 40px;
     background-color: #fff;
@@ -3019,7 +3026,7 @@ textarea::placeholder {
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding: 0;
-    width: 480px;
+    width: 100%;
   }
   .list-no-style-button button:hover,
   .list-no-style-button button:focus,
@@ -3136,7 +3143,7 @@ textarea::placeholder {
         flex-wrap: wrap;
     padding: 0px;
     margin: auto;
-    width: 480px;
+    width: 100%;
   }
   .work h2 {
     font-weight: 700;
@@ -3234,7 +3241,6 @@ textarea::placeholder {
     padding-top: 94px;
     padding-bottom: 94px;
     margin: auto;
-    width: 480px;
   }
   .tasks h3 {
     text-align: center;
@@ -3255,7 +3261,7 @@ textarea::placeholder {
     margin-bottom: 0;
   }
   .icon {
-    width: 450px;
+    width: 100%;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
@@ -3274,9 +3280,10 @@ textarea::placeholder {
     display: block;
     padding: 0;
     margin: 0;
+    width: 100%;
   }
   .tasks-heading {
-    width: 450px;
+    width: 100%;
     margin-top: 30px;
   }
   .tasks-heading:first-child {
@@ -3290,7 +3297,6 @@ textarea::placeholder {
     padding: 94px 0;
     text-align: center;
     margin: auto;
-    width: 480px;
   }
   .team h2 {
     font-weight: 700;
@@ -3321,9 +3327,10 @@ textarea::placeholder {
     padding: 0px;
     margin: 50px 0 0 0;
     display: block;
+    width: 100%;
   }
   .img-team {
-    width: 450px;
+    width: 100%;
     margin-top: 30px;
     background: #ffffff;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -3332,9 +3339,6 @@ textarea::placeholder {
   }
   .img-team:first-child {
     margin-top: 0;
-  }
-  .img-team img {
-    width: 450px;
   }
   .img-container {
     padding: 30px 32px 30px 32px;

@@ -1,7 +1,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     position: relative;
-    width: 480px;
+
     height: 60px;
     display: flex;
     border-bottom: 1px solid #ececec;
@@ -35,6 +35,7 @@
     display: block;
     padding: 0;
     margin: 0;
+    width: 100%;
   }
 
   .WebStudio {
@@ -148,6 +149,7 @@
     margin: 270px 0 0 40px;
     list-style: none;
     padding: 0;
+    width: 100%;
 
     & a:hover,
     & a:focus {
@@ -176,10 +178,16 @@
     text-decoration: none;
     display: block;
     padding: 0;
+    width: 100%;
   }
 
   .mailtel .item {
     margin-top: 32px;
+    width: 100%;
+  }
+
+  .menu .header-menu {
+    width: 100%;
   }
 
   .mobile-menu {
@@ -228,6 +236,7 @@
     flex-wrap: wrap;
     margin-top: 64px;
     margin-bottom: 48px;
+    width: 100%;
 
     & a {
       color: $color-hover;
