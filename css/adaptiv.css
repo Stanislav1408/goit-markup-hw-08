@@ -3022,9 +3022,6 @@ textarea::placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     padding: 0;
     width: 100%;
   }
@@ -3047,8 +3044,11 @@ textarea::placeholder {
   .list-button {
     margin-right: 8px;
   }
-  .list-button:nth-child(n + 4) {
-    margin-top: 15px;
+  .list-button:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
+  .list-button:nth-child(3n) {
+    margin-right: 0;
   }
   .button-type-a {
     width: 73px;
@@ -3168,7 +3168,7 @@ textarea::placeholder {
     display: -ms-flexbox;
     display: flex;
     width: 450px;
-    height: 404px;
+    height: auto;
     margin: 30px 0 0 0;
   }
   .list-no-style-work:first-child {
