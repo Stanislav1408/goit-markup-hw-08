@@ -1,22 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  background: #ffffff;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
